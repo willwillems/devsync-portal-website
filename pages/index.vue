@@ -80,9 +80,9 @@ export default {
 
   &__icon {
     @apply inline;
-    margin: 0 .5rem 0 -1.5rem;
+    margin: 0 .2rem 0 -2rem;
     transform-origin: center;
-    transform: rotate(5deg);
+    transform: rotate(5deg) translateY(0px);
   }
 
   &--prim {
