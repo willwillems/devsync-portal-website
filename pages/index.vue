@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- toggle portal element on and off -->
+    <style v-html="portalAppStyle"></style>
     <header class="header"></header>
     <main class="main">
       <section class="section section-hero">
@@ -7,16 +9,18 @@
         <!-- <h1 class="section-hero__title"> {{ t.headerTitle }} </h1> -->
         <p class="section-hero__sub-title"> {{ t.headerSubtitle }} </p>
         <div class="header-button-group">
-          <button class="button" @click="toggleDemo" >
+          <button class="button" @click="toggleDemo" id="portal-demo-button">
             <img src="/icon/code-24px.svg" class="button__icon" alt="">
             Demo</button>
           <button class="button button--prim" @click="buyItem" >
             <img src="/icon/monetization_on-24px.svg" class="button__icon" alt="">
             Pre-order</button>
         </div>
+        <div class="gumroad-modal-wrapper" :class="{'gumroad-modal-wrapper--hidden': !showBuyOverlay}">
+          <div class="gumroad-product-embed" data-gumroad-product-id="kMMfsm"><a href="https://gumroad.com/l/kMMfsm">Loading...</a></div>
+        </div>
       </section>
     </main>
-    <script v-if="demoIsActive" src="/demo/script.js"></script>
   </div>
 </template>
 
@@ -33,15 +37,26 @@ export default {
         headerTitle: "Speed up your workflow",
         headerSubtitle: "Stay focused. Make quick & visual adjustments.",
       },
-      demoIsActive: false
+      demoIsActive: false,
+      showBuyOverlay: false
+    }
+  },
+  computed: {
+    portalAppStyle () {
+      return `.portal-app { visibility: ${ this.demoIsActive ? 'visible' : 'hidden'}; }`
     }
   },
   methods: {
     toggleDemo () {
-      this.demoIsActive = true
+      this.demoIsActive = !this.demoIsActive
     },
     buyItem () {
-      alert('Sorry, pre-orders are not available yet.')
+      this.showBuyOverlay = true
+      window.setTimeout(() => document.addEventListener('click', this.hideBuyOverlay, { once: true }), 100)
+    },
+    hideBuyOverlay () {
+      this.showBuyOverlay = false
+      console.log('hideing')
     }
   }
 }
@@ -73,11 +88,10 @@ export default {
   }
 
    &__sub-title {
-    @apply text-2xl leading-tight my-2 max-w-5xl;
+    @apply text-3xl leading-tight my-1 max-w-5xl;
     font-family: "Audiowide", Arial;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-size: 32px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
     color: #eeeeee;
   }
 }
@@ -88,7 +102,7 @@ export default {
 } */
 
 .header-button-group {
-  @apply flex flex-row max-w-xl;
+  @apply flex flex-row flex-wrap justify-center max-w-xl;
 }
 
 .button {
@@ -123,7 +137,7 @@ export default {
   }
 
   &--prim {
-    /* background-color: #8c67de; */
+    background-image: linear-gradient(45deg, #212140, #3333ff);
     transition: transform ease-out .2s;
 
     &:hover {
@@ -151,4 +165,19 @@ export default {
   @apply m-2;
 }
 
+@media (max-width: 480px) {
+  #portal-demo-button {
+    display: none;
+  }
+}
+
+
+.gumroad-modal-wrapper {
+  @apply visible fixed max-h-full max-w-full;
+  width: 720px;
+
+  &--hidden {
+    @apply invisible
+  }
+}
 </style>
