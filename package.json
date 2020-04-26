@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "build": "npm run build-app && nuxt build",
+    "start": "npm run build-app && nuxt start",
+    "generate": "npm run build-app && nuxt generate",
+    "build-app": "cd app && npm i && npm run build && mv dist ../static/demo"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
