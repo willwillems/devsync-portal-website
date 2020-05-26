@@ -9,7 +9,7 @@
     "build": "npm run build-app && nuxt build",
     "start": "npm run build-app && nuxt start",
     "generate": "npm run build-app && nuxt generate",
-    "build-app": "cd app && npm i && npm run build && mv dist ../static/demo",
+    "build-app": "cd app && npm i && npm run build && mv -f dist ../static/demo",
     "postinstall": "git submodule init && git submodule update"
   },
   "dependencies": {

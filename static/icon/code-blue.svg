@@ -1,0 +1,11 @@
+
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy">
+            <g id="code-24px">
+                <polygon id="Path" points="0 0 60 0 60 60 0 60"></polygon>
+                <path d="M25.8666667,38.1388889 L17.2468468,29.8333333 L25.8666667,21.5277778 L23.2432432,19 L12,29.8333333 L23.2432432,40.6666667 L25.8666667,38.1388889 Z M34.5333333,38.1388889 L43.1531532,29.8333333 L34.5333333,21.5277778 L37.1567568,19 L48.4,29.8333333 L37.1567568,40.6666667 L34.5333333,38.1388889 L34.5333333,38.1388889 Z" id="Shape" fill="#327EE6" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
