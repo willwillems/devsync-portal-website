@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt />
+    <noscript><img src="https://sa.devsync.co/hello.gif" alt=""></noscript>
   </div>
 </template>
 
