@@ -170,6 +170,7 @@ export default {
   methods: {
     toggleDemo () {
       this.demoIsActive = !this.demoIsActive
+      document.getElementById('shortcuts').scrollIntoView({ behavior: 'smooth' })
     },
     buyItem () {
       window.location.href = "https://gumroad.com/l/kMMfsm"
