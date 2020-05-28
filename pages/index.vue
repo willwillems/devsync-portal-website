@@ -238,7 +238,7 @@ html, body {
 
 .section-sub-title {
   @apply my-2 max-w-2xl text-2xl font-medium leading-tight;
-  font-family: "SF Compact Text", Arial;
+  font-family: "SF Compact Text", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color: #E8ECF3;
   margin: 3px 0px;
 }
@@ -270,7 +270,7 @@ html, body {
 
   &__title {
     @apply text-2xl font-semibold max-w-2xl leading-snug;
-    font-family: "SF Compact Text", Arial;
+    font-family: "SF Compact Text", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: #E8ECF3;
   }
 
