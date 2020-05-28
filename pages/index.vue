@@ -1,5 +1,6 @@
 <template>
   <div>
+    <style v-html="portalAppStyle"></style>
     <header class="header"></header>
     <main class="main">
       <img src="/img/chalk-arrow.png" alt="chalk arrow" class="chalk-arrow" v-if="demoIsActive">
