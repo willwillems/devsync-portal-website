@@ -134,7 +134,7 @@
         <ul class="footer-link-list">
           <li><a href="mailto:will@devsync.com">Contact</a></li>
           <li><a href="https://willwillems.com/twitter">Twitter</a></li>
-          <li><a href="https://docs.devsync.com/portal">Docs</a></li>
+          <li><a href="https://docs.devsync.co/portal">Docs</a></li>
         </ul>
       </footer>
     </main>
