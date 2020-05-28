@@ -138,6 +138,9 @@
         </ul>
       </footer>
     </main>
+    <div class="gumroad-modal-wrapper" :class="{'gumroad-modal-wrapper--hidden': !showBuyOverlay}">
+      <div class="gumroad-product-embed" data-gumroad-product-id="kMMfsm"><a href="https://gumroad.com/l/kMMfsm">Loading...</a></div>
+    </div>
   </div>
 </template>
 
@@ -169,8 +172,9 @@ export default {
       this.demoIsActive = !this.demoIsActive
     },
     buyItem () {
-      this.showBuyOverlay = true
-      window.setTimeout(() => document.addEventListener('click', this.hideBuyOverlay, { once: true }), 100)
+      window.location.href = "https://gumroad.com/l/kMMfsm"
+      // this.showBuyOverlay = true
+      // window.setTimeout(() => document.addEventListener('click', this.hideBuyOverlay, { once: true }), 100)
     },
     hideBuyOverlay () {
       this.showBuyOverlay = false
@@ -563,6 +567,15 @@ html, body {
 
   @media (max-width: 600px) {
     display: none;
+  }
+}
+
+.gumroad-modal-wrapper {
+  @apply visible fixed max-h-full max-w-full;
+  width: 720px;
+
+  &--hidden {
+    @apply invisible
   }
 }
 
