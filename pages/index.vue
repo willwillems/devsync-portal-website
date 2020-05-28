@@ -169,8 +169,10 @@ export default {
   },
   methods: {
     toggleDemo () {
+      const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      if (!isChrome) alert('Sorry this demo only works on Chrome for now :(')
       this.demoIsActive = !this.demoIsActive
-      document.getElementById('shortcuts').scrollIntoView({ behavior: 'smooth' })
+      if (isChrome) document.getElementById('shortcuts').scrollIntoView({ behavior: 'smooth' })
     },
     buyItem () {
       window.location.href = "https://gumroad.com/l/kMMfsm"
