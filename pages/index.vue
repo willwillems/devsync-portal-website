@@ -228,12 +228,12 @@ html, body {
 .section-header-title {
   @apply leading-none my-1;
   font-size: 5rem;
-  font-family: "Quantico";
+  font-family: "Quantico", sans-serif;
 }
 
 .section-title {
   @apply text-6xl font-bold leading-none my-2 max-w-3xl;
-  font-family: "Quantico";
+  font-family: "Quantico", sans-serif;
 }
 
 .section-sub-title {
@@ -376,7 +376,7 @@ html, body {
 
 .button {
   @apply relative h-12 m-2 mx-4 text-white text-2xl font-bold whitespace-no-wrap uppercase;
-  font-family: "Quantico";
+  font-family: "Quantico", sans-serif;
 
   &__icon {
     @apply inline h-12 w-12;
@@ -504,13 +504,13 @@ html, body {
     background-color: white;
     color: black;
     /* border-radius: 3px; */
-    font-family: Quantico;
+    font-family: "Quantico", sans-serif;
     opacity: 0;
   }
 
   &__title {
     @apply text-6xl leading-none;
-    font-family: Quantico;
+    font-family: "Quantico", sans-serif;
   }
 
   &__sub-title {
@@ -519,7 +519,7 @@ html, body {
 
   &__button {
     @apply my-2 flex flex-row text-2xl font-bold text-white;
-    font-family: 'Quantico';
+    font-family: "Quantico", sans-serif;
     transition: transform .3s ease-out;
     line-height: 2.5em;
 
