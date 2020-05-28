@@ -9,18 +9,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal wil automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits.' },
+      { hid: 'description', name: 'description', content: 'Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal will automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits.' },
       // Open Graph / Facebook
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://portal.devsync.co/" },
       { property: "og:title", content: "Portal | A tiny portal to your editor in your browser" },
-      { property: "og:description", content: "Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal wil automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits." },
+      { property: "og:description", content: "Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal will automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits." },
       { property: "og:image", content: "https://portal.devsync.co/img/meta-og.png" },
       // Twitter
       { property: "twitter:card", content: "summary_large_image" },
       { property: "twitter:url", content: "https://portal.devsync.co/" },
       { property: "twitter:title", content: "Portal | A tiny portal to your editor in your browser" },
-      { property: "twitter:description", content: "Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal wil automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits." },
+      { property: "twitter:description", content: "Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal will automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits." },
       { property: "twitter:image", content: "https://portal.devsync.co/img/meta-tw.png" }
     ],
     link: [

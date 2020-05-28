@@ -25,7 +25,7 @@
         </div>
         <h1 class="section-title"> Let me explain. </h1>
         <!-- <h2 class="section-sub-title">Stay in you browser yes oh so amazing. Wish I discovered this earlier.</h2> -->
-        <p class="section-body">Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal wil automatically find all the relevant CSS in your editor.</p>
+        <p class="section-body">Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal will automatically find all the relevant CSS in your editor.</p>
         <!-- <div class="section-about__bg"></div> -->
         <!-- <div class="header-button-group">
           <button class="button" @click="toggleDemo">
