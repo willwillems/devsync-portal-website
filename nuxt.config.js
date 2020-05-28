@@ -31,6 +31,8 @@ export default {
       { rel: 'stylesheet', href: '/demo/web.css' }
     ],
     script: [
+      { src: '/js/sa.js'},
+      { async: '', defer: '', src: "https://sa.devsync.co/latest.js", body: true },
       { src: '/demo/web.js', body: true },
       { src: 'https://gumroad.com/js/gumroad-embed.js', defer: '', body: true }
     ],
