@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Portal | A tiny portal to your editor in your browser',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Portal provides a real-time connection with your editor. Stay in your browser and instantly see what your CSS changes are actually doing. Just select elements visually and Portal wil automatically find all the relevant CSS in your editor. Save time by getting direct visual feedback on your CSS edits.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
